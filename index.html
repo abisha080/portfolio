@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olive Insights by Abi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">OLIVE INSIGHTS</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#portfolio">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#certifications">Certs</a></li>
+        </ul>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content reveal">
+            <div class="profile-glow">
+                <img src="profile.jpg" alt="Abisha C" class="profile-img">
+            </div>
+            <h1 class="glitch">OLIVE INSIGHTS BY ABI</h1>
+            <h3 class="typing">Data Scientist & Data Analyst</h3>
+            <div class="hero-btns">
+                <a href="#portfolio" class="btn-main">Explore Work</a>
+                <a href="https://github.com/abisha080" target="_blank" class="btn-sub"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio" class="projects">
+        <h2 class="reveal">Featured Projects</h2>
+        <div class="grid">
+            <div class="card reveal">
+                <div class="card-img"><img src="Inventory Forecasting.png" alt="Inventory"></div>
+                <div class="card-info">
+                    <h4>Inventory Forecasting</h4>
+                    <p>XGBoost | R² = 0.94</p>
+                </div>
+            </div>
+            <div class="card reveal">
+                <div class="card-img"><img src="Sales Dashboard.jpeg" alt="Sales"></div>
+                <div class="card-info">
+                    <h4>Sales Dashboard</h4>
+                    <p>Power BI | DAX</p>
+                </div>
+            </div>
+            <div class="card reveal">
+                <div class="card-img"><img src="Rice Leaf Disease.png" alt="Rice"></div>
+                <div class="card-info">
+                    <h4>Rice Disease Detection</h4>
+                    <p>Deep Learning | 93% Acc</p>
+                </div>
+            </div>
+            </div>
+    </section>
+
+    <script>
+        // Scroll Animation Logic
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.reveal').forEach((el) => observer.observe(el));
+    </script>
+</body>
+</html>
