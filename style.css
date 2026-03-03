@@ -12,65 +12,71 @@ body { background: var(--bg); color: var(--text); scroll-behavior: smooth; overf
 .navbar {
     display: flex; justify-content: space-between; padding: 20px 8%;
     background: rgba(5, 8, 11, 0.95); backdrop-filter: blur(10px);
-    position: fixed; width: 100%; z-index: 1000;
+    position: fixed; width: 100%; z-index: 1000; border-bottom: 1px solid rgba(0,255,136,0.1);
 }
 .logo { color: var(--olive); font-weight: 800; letter-spacing: 2px; }
 nav ul { display: flex; list-style: none; }
 nav ul li { margin-left: 20px; }
-nav ul li a { color: var(--text); text-decoration: none; font-size: 0.9rem; font-weight: bold; transition: 0.3s; }
+nav ul li a { color: var(--text); text-decoration: none; font-size: 0.9rem; font-weight: bold; }
 nav ul li a:hover { color: var(--olive); }
 
-/* Centered Hero */
-.hero { height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; }
+/* Centered Hero & Profile */
+.hero { min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; padding: 120px 10% 60px; }
 .profile-frame {
-    width: 200px; height: 200px; margin: 0 auto 30px;
+    width: 200px; height: 200px; margin-bottom: 25px;
     border: 4px solid var(--olive); border-radius: 50%; padding: 5px;
     box-shadow: 0 0 25px var(--olive); animation: pulse 2s infinite alternate;
 }
 .rounded-pic { width: 100%; height: 100%; border-radius: 50%; object-fit: cover; }
-.brand-name { font-size: 3.5rem; color: var(--olive); text-shadow: 0 0 10px var(--olive); }
-.user-name { font-size: 2.2rem; margin-top: 10px; }
-.role-glitch { color: var(--olive); font-weight: bold; letter-spacing: 2px; }
+.brand-name { font-size: 3rem; color: var(--olive); text-shadow: 0 0 10px var(--olive); }
+.user-name { font-size: 2rem; margin: 10px 0; }
+.role-title { color: var(--olive); font-weight: bold; letter-spacing: 1px; margin-bottom: 20px; }
 
-/* Download Resume Button (Green Theme) */
-.resume-download { margin-top: 40px; }
+.summary-container { max-width: 700px; line-height: 1.6; color: #ccc; margin-bottom: 30px; }
+
+/* Resume Button */
 .resume-btn {
-    padding: 15px 35px; background: transparent; color: var(--olive);
+    display: inline-block; padding: 15px 35px; background: transparent; color: var(--olive);
     border: 2px solid var(--olive); border-radius: 50px; text-decoration: none;
-    font-weight: 900; transition: 0.4s; animation: glowPulse 2s infinite;
+    font-weight: bold; transition: 0.4s; animation: glowPulse 2s infinite;
 }
 .resume-btn:hover { background: var(--olive); color: #000; box-shadow: 0 0 40px var(--olive); }
 
-/* Experience/Cert Links (Green Theme) */
-.cert-link, .cert-btn {
-    display: inline-block; color: var(--olive); text-decoration: none;
-    font-weight: bold; border: 1px solid var(--olive);
-    padding: 8px 15px; border-radius: 5px; margin-top: 10px; transition: 0.3s;
-}
-.cert-link:hover, .cert-btn:hover { background: var(--olive); color: #000; }
+/* Section Generic Styling */
+section { padding: 100px 10%; border-bottom: 1px solid rgba(255,255,255,0.05); }
+.section-title { color: var(--olive); text-align: center; font-size: 2.5rem; margin-bottom: 50px; }
+
+/* Skills Grid */
+.skills-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
+.skill-card { background: var(--card); padding: 40px; border-radius: 20px; text-align: center; border: 1px solid rgba(0, 255, 136, 0.1); transition: 0.3s; }
+.skill-card i { font-size: 3rem; color: var(--olive); margin-bottom: 20px; }
+.skill-card:hover { transform: translateY(-10px); border-color: var(--olive); }
 
 /* Project Layout */
 .project-list { display: flex; flex-direction: column; gap: 40px; }
-.project-wide { display: flex; background: var(--card); border-radius: 20px; overflow: hidden; border: 1px solid rgba(0, 255, 136, 0.1); }
-.p-img { width: 300px; height: 200px; flex-shrink: 0; }
+.project-wide { display: flex; background: var(--card); border-radius: 20px; overflow: hidden; border: 1px solid rgba(255,255,255,0.05); transition: 0.3s; }
+.project-wide:hover { border-color: var(--olive); transform: scale(1.01); }
+.p-img { width: 350px; height: 220px; flex-shrink: 0; }
 .p-img img { width: 100%; height: 100%; object-fit: cover; }
-.p-text { padding: 30px; }
-.p-text h4 { color: var(--olive); margin-bottom: 10px; }
+.p-text { padding: 30px; display: flex; flex-direction: column; justify-content: center; }
+.p-text h4 { color: var(--olive); font-size: 1.4rem; margin-bottom: 15px; }
+.p-text p { color: #ccc; font-size: 0.95rem; line-height: 1.5; }
 
-/* Grids */
-section { padding: 100px 10%; }
-.section-title { color: var(--olive); text-align: center; font-size: 2.5rem; margin-bottom: 50px; }
-.skills-grid, .cert-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
-.skill-card, .cert-card, .timeline-item { 
-    background: var(--card); padding: 30px; border-radius: 15px; 
-    border: 1px solid rgba(0, 255, 136, 0.1); text-align: center;
+/* Certifications */
+.cert-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
+.cert-card { background: var(--card); padding: 30px; border-radius: 20px; text-align: center; border: 1px solid rgba(255,255,255,0.05); }
+.cert-card i { font-size: 3rem; color: var(--olive); margin-bottom: 15px; }
+.cert-link, .cert-btn {
+    display: inline-block; color: var(--olive); text-decoration: none; font-weight: bold;
+    border: 1px solid var(--olive); padding: 10px 20px; border-radius: 5px; margin-top: 15px; transition: 0.3s;
 }
-.skill-card i, .cert-card i { font-size: 3rem; color: var(--olive); margin-bottom: 15px; }
+.cert-link:hover, .cert-btn:hover { background: var(--olive); color: #000; }
 
 /* Contact */
-.contact-info { text-align: center; }
-.social-links { margin-top: 20px; }
-.social-links a { color: var(--olive); text-decoration: none; margin: 0 15px; font-size: 1.2rem; font-weight: bold; }
+.contact-container { text-align: center; }
+.social-links { margin-top: 30px; }
+.social-links a { color: var(--olive); text-decoration: none; margin: 0 20px; font-size: 1.3rem; font-weight: bold; border-bottom: 1px solid transparent; transition: 0.3s; }
+.social-links a:hover { border-color: var(--olive); }
 
 /* Animations */
 .reveal { opacity: 0; transform: translateY(40px); transition: 1s ease-out; }
@@ -87,7 +93,8 @@ section { padding: 100px 10%; }
     100% { box-shadow: 0 0 0 0 rgba(0, 255, 136, 0); }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .project-wide { flex-direction: column; }
     .p-img { width: 100%; }
+    .cert-grid { grid-template-columns: 1fr; }
 }
