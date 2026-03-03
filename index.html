@@ -1,163 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Olive Insights by Abi</title>
-<link rel="stylesheet" href="style.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abisha C | Data Scientist Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
-
 <body>
 
-<nav class="navbar">
-    <div class="logo">OLIVE INSIGHTS</div>
-    <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#contact">Contact</a></li>
-    </ul>
-</nav>
+    <nav>
+        <div class="logo">OLIVE INSIGHTS</div>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
-<section id="home" class="hero">
-    <div class="hero-content">
-        <div class="profile-frame">
-            <img src="Profile .jpeg" class="rounded-pic">
+    <section id="home" class="hero">
+        <div class="hero-content" data-aos="fade-up">
+            <h2 class="brand-name">OLIVE INSIGHTS BY ABI</h2>
+            <h1>Abisha C</h1>
+            <h3>Data Scientist & Data Analyst</h3>
+            <p>Results-driven Data Professional with hands-on experience in SQL-based data extraction, Python-driven exploratory data analysis, and Power BI dashboard development.</p>
+            <a href="ABISHA C_DATA_ANALYST.pdf" class="btn" download>DOWNLOAD RESUME</a>
         </div>
+        <div class="blob-animation"></div>
+    </section>
 
-        <h1>OLIVE INSIGHTS BY ABI</h1>
-        <h2>Abisha C</h2>
-        <h3>Data Scientist & Data Analyst</h3>
+    <section id="projects">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="project-grid">
+            <div class="project-card" data-aos="fade-up">
+                <img src="Sales Dashboard.jpeg" alt="Super Market Sales">
+                <div class="project-info">
+                    <h3>Super Market Sales Dashboard</h3>
+                    <p>Comprehensive overview of sales performance, profit margins, and payment distributions using Power BI.</p>
+                    <div class="tags"><span>Power BI</span> <span>Excel</span> <span>DAX</span></div>
+                </div>
+            </div>
+            <div class="project-card" data-aos="fade-up">
+                <img src="bank marketing.png" alt="Bank Marketing">
+                <div class="project-info">
+                    <h3>Bank Subscription Prediction</h3>
+                    <p>ML model using LightGBM and SMOTE to predict term deposit subscriptions with 0.95 ROC-AUC.</p>
+                    <div class="tags"><span>Python</span> <span>XGBoost</span> <span>SMOTE</span></div>
+                </div>
+            </div>
+            <div class="project-card" data-aos="fade-up">
+                <img src="Inventory Forecasting.png" alt="Inventory">
+                <div class="project-info">
+                    <h3>Inventory Forecasting (SWITCH)</h3>
+                    <p>End-to-end time series forecasting for spare parts achieving 94% accuracy with XGBoost.</p>
+                    <div class="tags"><span>Time Series</span> <span>Prophet</span> <span>Optimization</span></div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <p class="summary">
-            Results-driven Data Professional with hands-on experience in SQL-based data extraction, Python-driven exploratory data analysis, and Power BI dashboard development. Skilled in transforming large datasets into actionable business insights.
-        </p>
+    <section id="skills">
+        <h2 class="section-title">Technical Expertise</h2>
+        <div class="skills-container">
+            <div class="skill-category" data-aos="zoom-in">
+                <h4>Languages & Analysis</h4>
+                <p>Python (Pandas, NumPy, Matplotlib, Seaborn), Data Cleaning, EDA, Statistical Analysis.</p>
+            </div>
+            <div class="skill-category" data-aos="zoom-in">
+                <h4>Databases</h4>
+                <p>SQL (DDL, DQL, DML, Joins, Views), MySQL.</p>
+            </div>
+            <div class="skill-category" data-aos="zoom-in">
+                <h4>Business Intelligence</h4>
+                <p>Power BI (ETL, DAX), Tableau, KPI Reporting.</p>
+            </div>
+            <div class="skill-category" data-aos="zoom-in">
+                <h4>Machine Learning</h4>
+                <p>Supervised, Unsupervised, Deep Learning, Scikit-learn.</p>
+            </div>
+        </div>
+    </section>
 
-        <a href="ABISHA C_DATA_ANALYST.pdf" class="btn" target="_blank">
-            DOWNLOAD RESUME
-        </a>
-    </div>
-</section>
+    <section id="contact">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-wrapper">
+            <form action="#">
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <textarea placeholder="Your Message" rows="5"></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+            <div class="social-links">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </section>
 
-<section id="skills">
-<h2 class="section-title">Skills</h2>
+    <footer>
+        <p>&copy; 2026 Olive Insights by Abi | All Rights Reserved</p>
+    </footer>
 
-<div class="skill-block">
-<h3>Programming</h3>
-<p>Python (Pandas, NumPy, Matplotlib, Seaborn), Data Cleaning, EDA, Statistical Analysis</p>
-
-<h3>Databases</h3>
-<p>SQL (DDL, DQL, DML, Joins, Subqueries, Views, Aggregations), MySQL</p>
-
-<h3>Business Intelligence</h3>
-<p>Power BI (ETL, Data Modeling, DAX, Dashboards), Tableau, KPI Reporting</p>
-
-<h3>Tools & Reporting</h3>
-<p>Advanced Excel (Pivot Tables, XLOOKUP, Power Query), Dashboard Automation</p>
-
-<h3>Core Competencies</h3>
-<p>Data Transformation, Analytical Thinking, Data Storytelling</p>
-
-<h3>Machine Learning</h3>
-<p>Supervised, Unsupervised, Deep Learning, Scikit-Learn</p>
-</div>
-</section>
-
-<section id="experience">
-<h2 class="section-title">Experience</h2>
-
-<div class="experience-card">
-<h3>Data Scientist Intern | Rubixe AI, Bangalore</h3>
-<p>Aug 2025 – Feb 2026</p>
-<ul>
-<li>Delivered 5+ client-based analytics projects.</li>
-<li>Automated SQL & Excel workflows (25% efficiency gain).</li>
-<li>Built Power BI dashboards tracking 10+ KPIs.</li>
-<li>Presented insights to stakeholders.</li>
-</ul>
-</div>
-
-<div class="experience-card">
-<h3>Data Analytics Intern | Novi Tech (Remote)</h3>
-<p>Jul 2024 – Aug 2024</p>
-<ul>
-<li>Analyzed 10,000+ records using Python & Excel.</li>
-<li>Performed data cleaning & EDA.</li>
-<li>Developed dashboards for management insights.</li>
-</ul>
-</div>
-
-</section>
-
-<section id="projects">
-<h2 class="section-title">Projects</h2>
-
-<div class="project-grid">
-
-<div class="project-card">
-<img src="Sales Dashboard.jpeg">
-<h3>Super Market Sales Dashboard</h3>
-<p>Power BI dashboard analyzing sales, profit & customer behavior.</p>
-</div>
-
-<div class="project-card">
-<img src="bank marketing.png">
-<h3>Bank Marketing Prediction</h3>
-<p>LightGBM model achieving ROC-AUC 0.95 with SMOTE handling imbalance.</p>
-</div>
-
-<div class="project-card">
-<img src="Inventory Forecasting.png">
-<h3>Inventory Forecasting</h3>
-<p>XGBoost R² 0.94 optimizing safety stock & EOQ.</p>
-</div>
-
-<div class="project-card">
-<img src="fifa20.png">
-<h3>FIFA 20 Analysis</h3>
-<p>LightGBM 95.3% accuracy with SHAP explainability.</p>
-</div>
-
-<div class="project-card">
-<img src="Earthquake.png">
-<h3>Earthquake Damage Prediction</h3>
-<p>Tuned XGBoost 73.09% accuracy.</p>
-</div>
-
-<div class="project-card">
-<img src="Rice Leaf Disease.png">
-<h3>Rice Leaf Disease Detection</h3>
-<p>MobileNetV2 93.14% validation accuracy.</p>
-</div>
-
-</div>
-</section>
-
-<section id="education">
-<h2 class="section-title">Education</h2>
-<p><strong>B.E Computer Science</strong> – Arunachala College of Engineering for Women (Anna University) | 2021–2025 | CGPA: 8.3</p>
-<p><strong>HSC</strong> – LMS Girls Hr Sec School | CGPA: 8.63</p>
-</section>
-
-<section id="contact">
-<h2 class="section-title">Get In Touch</h2>
-
-<form class="contact-form">
-<input type="text" placeholder="Name">
-<input type="email" placeholder="Email ID">
-<textarea placeholder="Message"></textarea>
-<button type="submit" class="btn">Send Message</button>
-</form>
-
-<div class="social">
-<a href="https://github.com/abisha080" target="_blank">GitHub</a>
-<a href="https://www.linkedin.com/in/abisha-c-266923311/" target="_blank">LinkedIn</a>
-</div>
-
-</section>
-
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1000, once: true });
+    </script>
 </body>
 </html>
