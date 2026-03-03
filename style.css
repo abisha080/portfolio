@@ -214,14 +214,4 @@ section {
     color: var(--olive);
 }
 
-/* REVEAL ANIMATION */
-.reveal {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: 0.8s ease;
-}
 
-.reveal.show {
-    opacity: 1;
-    transform: translateY(0);
-}
