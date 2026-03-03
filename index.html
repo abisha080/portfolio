@@ -23,8 +23,10 @@
 
     <section id="home" class="hero">
         <div class="hero-content reveal">
-            <div class="profile-frame">
-                <img src="Profile%20.jpeg" alt="Abisha C" class="rounded-pic">
+            <div class="profile-container">
+                <div class="profile-frame">
+                    <img src="Profile%20.jpeg" alt="Abisha C" class="rounded-pic">
+                </div>
             </div>
             <h1 class="brand-name">OLIVE INSIGHTS BY ABI</h1>
             <h2 class="user-name">Abisha C</h2>
@@ -34,7 +36,7 @@
                 <p>Results-driven Data Professional with hands-on experience in SQL-based data extraction, Python-driven exploratory data analysis, and Power BI dashboard development. Skilled in transforming large datasets into actionable business insights through KPI reporting, forecasting, and machine learning. Experienced in automating reporting workflows to improve operational efficiency.</p>
             </div>
 
-            <div class="resume-container">
+            <div class="hero-btns">
                 <a href="ABISHA%20C_DATA_ANALYST.pdf" target="_blank" class="glow-btn">
                     <i class="fas fa-file-pdf"></i> DOWNLOAD RESUME
                 </a>
@@ -69,7 +71,7 @@
             <div class="timeline-item reveal">
                 <h4 class="green-text">Data Scientist Intern | Rubixe AI</h4>
                 <p class="date">Aug 2025 – Feb 2026</p>
-                <p>Delivered 5+ client-based analytics projects, improving reporting efficiency. Automated SQL and Excel reporting workflows, reducing manual effort by approximately 25%.</p>
+                <p>Automated SQL and Excel reporting workflows, reducing manual effort by 25%. Delivered 5+ client-based analytics projects using structured data extraction and predictive modeling.</p>
                 <a href="Internship%20completion%20certificate%20rubixe%20ai.pdf" target="_blank" class="cert-link">VIEW CERTIFICATE</a>
             </div>
             <div class="timeline-item reveal">
@@ -86,7 +88,7 @@
         <div class="project-column">
             
             <div class="project-row reveal">
-                <img src="fifa20.png" class="p-img">
+                <div class="p-img-box"><img src="fifa20.png"></div>
                 <div class="p-info">
                     <h4 class="green-text">⚽ FIFA 20 Player Performance Analysis</h4>
                     <p>Comprehensive data analysis on 18,278 players. Used SMOTE and LightGBM to achieve 95.3% accuracy in classifying performance levels and identifying skill-based clusters.</p>
@@ -94,7 +96,7 @@
             </div>
 
             <div class="project-row reveal">
-                <img src="Earthquake.png" class="p-img">
+                <div class="p-img-box"><img src="Earthquake.png"></div>
                 <div class="p-info">
                     <h4 class="green-text">🌋 Earthquake Damage Level Prediction</h4>
                     <p>Predicting building damage levels using Tuned XGBoost (73.09% accuracy). Reliable for disaster-response planning and structural risk assessment.</p>
@@ -102,7 +104,7 @@
             </div>
 
             <div class="project-row reveal">
-                <img src="Rice%20Leaf%20Disease.png" class="p-img">
+                <div class="p-img-box"><img src="Rice%20Leaf%20Disease.png"></div>
                 <div class="p-info">
                     <h4 class="green-text">🌾 Rice Leaf Disease Detection</h4>
                     <p>Automated Deep Learning system using MobileNetV2 with 93.14% validation accuracy to detect Bacterial Leaf Blight and Brown Spot images.</p>
@@ -110,7 +112,7 @@
             </div>
 
             <div class="project-row reveal">
-                <img src="Inventory%20Forecasting.png" class="p-img">
+                <div class="p-img-box"><img src="Inventory%20Forecasting.png"></div>
                 <div class="p-info">
                     <h4 class="green-text">🔮 Inventory Forecasting (SWITCH Parts)</h4>
                     <p>Time-series forecasting on 28k+ records. XGBoost achieved R² = 0.94, enabling data-driven inventory optimization for safety stock and reorder points.</p>
@@ -118,7 +120,7 @@
             </div>
 
             <div class="project-row reveal">
-                <img src="bank%20marketing.png" class="p-img">
+                <div class="p-img-box"><img src="bank%20marketing.png"></div>
                 <div class="p-info">
                     <h4 class="green-text">🏦 Bank Marketing Subscription Prediction</h4>
                     <p>Built an end-to-end model using Tuned LightGBM (ROC-AUC 0.95). Optimized to predict customer subscriptions using SMOTE for class balancing.</p>
@@ -126,7 +128,7 @@
             </div>
 
             <div class="project-row reveal">
-                <img src="Sales%20Dashboard.jpeg" class="p-img">
+                <div class="p-img-box"><img src="Sales%20Dashboard.jpeg"></div>
                 <div class="p-info">
                     <h4 class="green-text">🛒 Super Market Sales Dashboard</h4>
                     <p>Interactive Power BI dashboard analyzing Sales, Profit, and Category performance. Derived insights on monthly trends to optimize sales strategy.</p>
@@ -137,14 +139,14 @@
     </section>
 
     <section id="certs">
-        <h2 class="section-title reveal">Professional Certifications</h2>
-        <div class="skills-grid">
-            <div class="skill-card reveal">
+        <h2 class="section-title reveal">Certifications</h2>
+        <div class="cert-flex">
+            <div class="cert-card reveal">
                 <i class="fas fa-certificate"></i>
                 <p>IBM Data Analyst Professional</p>
                 <a href="IBM%20Data%20Analyst%20Certificate.jpeg" target="_blank" class="cert-link">VIEW CERTIFICATE</a>
             </div>
-            <div class="skill-card reveal">
+            <div class="cert-card reveal">
                 <i class="fas fa-award"></i>
                 <p>Certified Data Scientist (DataMites)</p>
                 <a href="CDS%20Course%20Completion%20certificate.pdf" target="_blank" class="cert-link">VIEW CERTIFICATE</a>
@@ -154,19 +156,21 @@
 
     <section id="contact">
         <h2 class="section-title reveal">Get In Touch</h2>
-        <div class="contact-wrapper reveal">
+        <div class="contact-center reveal">
             <form class="contact-form">
-                <input type="text" placeholder="Your Name" required>
-                <input type="email" placeholder="Your Email" required>
-                <textarea placeholder="Your Message / Description" rows="5" required></textarea>
+                <div class="input-group">
+                    <input type="text" placeholder="Full Name" required>
+                    <input type="email" placeholder="Email Address" required>
+                </div>
+                <textarea placeholder="Tell me about your project or inquiry..." rows="6" required></textarea>
                 <button type="submit" class="glow-btn">SEND MESSAGE</button>
             </form>
 
-            <div class="social-footer">
-                <p class="email-text">abishac0819@gmail.com</p>
-                <div class="social-icons">
-                    <a href="https://github.com/abisha080" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-                    <a href="https://www.linkedin.com/in/abisha-c-266923311/" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <div class="contact-footer">
+                <p class="contact-email">abishac0819@gmail.com</p>
+                <div class="footer-socials">
+                    <a href="https://github.com/abisha080" target="_blank" class="social-btn"><i class="fab fa-github"></i> GitHub</a>
+                    <a href="https://www.linkedin.com/in/abisha-c-266923311/" target="_blank" class="social-btn"><i class="fab fa-linkedin"></i> LinkedIn</a>
                 </div>
             </div>
         </div>
