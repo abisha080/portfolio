@@ -7,19 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
-    <script>
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('show');
-        }
-    });
-}, { threshold: 0.1 });
 
-document.querySelectorAll('.reveal').forEach((el) => {
-    observer.observe(el);
-});
-</script>
 <body>
 
 <nav class="navbar">
@@ -37,7 +25,6 @@ document.querySelectorAll('.reveal').forEach((el) => {
 <!-- HERO SECTION -->
 <section id="home" class="hero">
     <div class="hero-content reveal">
-        
         <div class="profile-frame">
             <img src="Profile.jpeg" alt="Abisha C" class="rounded-pic">
         </div>
@@ -47,49 +34,48 @@ document.querySelectorAll('.reveal').forEach((el) => {
         <h3 class="role-title">Data Scientist & Data Analyst</h3>
 
         <div class="summary-box">
-            <p>Results-driven Data Professional with hands-on experience in SQL-based data extraction, Python-driven exploratory data analysis, and Power BI dashboard development. Skilled in transforming large datasets into actionable business insights through KPI reporting, forecasting, and machine learning.</p>
+            <p>
+                Results-driven Data Professional with hands-on experience in SQL-based data extraction,
+                Python-driven exploratory data analysis, and Power BI dashboard development.
+                Skilled in transforming large datasets into actionable business insights.
+            </p>
         </div>
 
         <div class="hero-btns">
-            <a href="ABISHA C_DATA_ANALYST.pdf" target="_blank" class="glow-btn">
+            <a href="ABISHA_C_DATA_ANALYST.pdf" target="_blank" class="glow-btn">
                 <i class="fas fa-file-pdf"></i> DOWNLOAD RESUME
             </a>
         </div>
-
     </div>
 </section>
-    <section id="skills">
+
+<!-- SKILLS -->
+<section id="skills">
     <h2 class="section-title reveal">Skills</h2>
-
     <div class="skills-container">
-
         <div class="skill-card reveal">
             <h3>Programming</h3>
             <p>Python, SQL, Pandas, NumPy</p>
         </div>
-
         <div class="skill-card reveal">
             <h3>Machine Learning</h3>
             <p>Scikit-Learn, XGBoost, LightGBM, SMOTE</p>
         </div>
-
         <div class="skill-card reveal">
             <h3>Data Visualization</h3>
             <p>Power BI, Matplotlib, Seaborn</p>
         </div>
-
         <div class="skill-card reveal">
             <h3>Tools</h3>
             <p>GitHub, Jupyter Notebook, MySQL</p>
         </div>
-
     </div>
 </section>
-    <section id="experience">
+
+<!-- EXPERIENCE -->
+<section id="experience">
     <h2 class="section-title reveal">Experience</h2>
-
     <div class="experience-container reveal">
-
         <div class="experience-card">
             <h3>Data Scientist Intern</h3>
             <h4>Rubixe AI – Bangalore</h4>
@@ -101,63 +87,59 @@ document.querySelectorAll('.reveal').forEach((el) => {
                 <li>Improved reporting efficiency by 20%.</li>
             </ul>
         </div>
-
     </div>
 </section>
 
-<!-- PROJECTS SECTION -->
+<!-- PROJECTS -->
 <section id="projects">
     <h2 class="section-title reveal">Featured Projects</h2>
-
     <div class="project-container">
 
         <div class="project-card reveal">
-            <div class="project-img"><img src="fifa20.png"></div>
+            <div class="project-img"><img src="fifa20.png" alt=""></div>
             <div class="project-info">
                 <h4 class="green-text">⚽ FIFA 20 Player Performance Analysis</h4>
-                <p>Analyzed 18,278 players to identify skill-based clusters. Implemented SMOTE and LightGBM to achieve 95.3% accuracy in performance classification.</p>
+                <p>SMOTE + LightGBM achieving 95.3% accuracy.</p>
             </div>
         </div>
 
         <div class="project-card reveal">
-            <div class="project-img"><img src="Earthquake.png"></div>
+            <div class="project-img"><img src="Earthquake.png" alt=""></div>
             <div class="project-info">
-                <h4 class="green-text">🌋 Earthquake Damage Level Prediction</h4>
-                <p>Classified building damage levels using Tuned XGBoost (73.09% accuracy).</p>
+                <h4 class="green-text">🌋 Earthquake Damage Prediction</h4>
+                <p>Tuned XGBoost (73.09% accuracy).</p>
             </div>
         </div>
 
         <div class="project-card reveal">
-            <div class="project-img"><img src="Rice Leaf Disease.png"></div>
+            <div class="project-img"><img src="rice-leaf.png" alt=""></div>
             <div class="project-info">
                 <h4 class="green-text">🌾 Rice Leaf Disease Detection</h4>
-                <p>Deep Learning system using MobileNetV2 with 93.14% validation accuracy.</p>
-            </div>
-        </div>
-
-        <div class="project-card reveal">
-            <div class="project-img"><img src="Inventory Forecasting.png"></div>
-            <div class="project-info">
-                <h4 class="green-text">🔮 Inventory Forecasting</h4>
-                <p>XGBoost achieved R² = 0.94, optimizing safety stock and EOQ.</p>
-            </div>
-        </div>
-
-        <div class="project-card reveal">
-            <div class="project-img"><img src="bank marketing.png"></div>
-            <div class="project-info">
-                <h4 class="green-text">🏦 Bank Marketing Prediction</h4>
-                <p>LightGBM achieved ROC-AUC 0.95 handling class imbalance.</p>
-            </div>
-        </div>
-
-        <div class="project-card reveal">
-            <div class="project-img"><img src="Sales Dashboard.jpeg"></div>
-            <div class="project-info">
-                <h4 class="green-text">🛒 Super Market Sales Dashboard</h4>
-                <p>Power BI dashboard analyzing sales, profit & category trends.</p>
+                <p>MobileNetV2 with 93.14% validation accuracy.</p>
             </div>
         </div>
 
     </div>
 </section>
+
+<!-- SCRIPT AT BOTTOM (IMPORTANT) -->
+<script>
+document.addEventListener("DOMContentLoaded", function() {
+
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('show');
+            }
+        });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.reveal').forEach((el) => {
+        observer.observe(el);
+    });
+
+});
+</script>
+
+</body>
+</html>
