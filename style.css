@@ -86,6 +86,53 @@ body {
 .project-info {
     padding: 25px;
 }
+/* SKILLS SECTION */
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+}
+
+.skill-card {
+    background: var(--card);
+    padding: 30px;
+    border-radius: 15px;
+    text-align: center;
+    border: 1px solid rgba(0,255,136,0.1);
+    transition: 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 25px rgba(0,255,136,0.3);
+}
+
+/* EXPERIENCE SECTION */
+.experience-container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.experience-card {
+    background: var(--card);
+    padding: 40px;
+    border-radius: 20px;
+    border: 1px solid rgba(0,255,136,0.1);
+}
+
+.experience-card h3 {
+    color: var(--olive);
+    margin-bottom: 5px;
+}
+
+.experience-card ul {
+    margin-top: 15px;
+    padding-left: 20px;
+}
+
+.experience-card li {
+    margin-bottom: 10px;
+}
 
 .green-text {
     color: var(--olive);
